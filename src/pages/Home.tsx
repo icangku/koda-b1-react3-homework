@@ -2,27 +2,12 @@ import React from "react";
 import ProductCard from "../components/ProductCard";
 const dishes = [
   {
-    id: 8,
-    name: "Nasi Telur Minang",
+    id: 4,
+    name: "Ikan Cue Goreng",
     description: "Ayam Pop dengan rasa lezat yang hakiki",
-    price: 15500,
-    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
-    stock: 5,
-  },
-  {
-    id: 9,
-    name: "Dendeng Cabe Ijo/Cabe Merah",
-    description: "Ayam Pop dengan rasa lezat yang hakiki",
-    price: 30000,
-    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
-    stock: 5,
-  },
-  {
-    id: 10,
-    name: "Jus Timun Nanas",
-    description: "Ayam Pop dengan rasa lezat yang hakiki",
-    price: 24400,
-    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    price: 3000,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwYXPJ8BDCIpoOCjVUKba8FGKISlEnp8jOtkLc0fok58CjoyhhrJBKykY&s=10",
     stock: 5,
   },
   {
@@ -30,7 +15,8 @@ const dishes = [
     name: "Nasi Putih",
     description: "Ayam Pop dengan rasa lezat yang hakiki",
     price: 7000,
-    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3gSix3tvnT4zUnT9X0W8jbj1Nj6OCS4Z99MvLciZ8xKWGE_f7j34jGQo&s=10",
     stock: 5,
   },
   {
@@ -38,7 +24,8 @@ const dishes = [
     name: "Paket Komplit Ayam Goreng Kecombrang",
     description: "Ayam Pop dengan rasa lezat yang hakiki",
     price: 21500,
-    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDwni7EjY708FQ_8re10XKxLqoPsnzuzdXizwuYsyCr_QB4QuogHMRD0&s=10",
     stock: 5,
   },
   {
@@ -46,7 +33,35 @@ const dishes = [
     name: "Ayam Kecap",
     description: "Ayam Pop dengan rasa lezat yang hakiki",
     price: 25500,
-    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8eFqoO00PE9jhAlA7V-_cQjT_7u_FF0W3AAvk0XI_Dvwn_PUpcdfLx6M&s=10",
+    stock: 5,
+  },
+  {
+    id: 8,
+    name: "Nasi Telur Minang",
+    description: "Ayam Pop dengan rasa lezat yang hakiki",
+    price: 15500,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVz_lu77-A8MMKYxOg2xRKwmXMT5AJPpJicR8HdC8Sz1RXg7I9NQHG3_NV&s=10",
+    stock: 5,
+  },
+  {
+    id: 9,
+    name: "Dendeng Cabe Ijo/Cabe Merah",
+    description: "Ayam Pop dengan rasa lezat yang hakiki",
+    price: 30000,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIHVatm2fdYw0ciY9Bmrz3woh8HeXshkriRhrErdPyepbNiGYrtI33e-ay&s=10",
+    stock: 5,
+  },
+  {
+    id: 10,
+    name: "Jus Timun Nanas",
+    description: "Ayam Pop dengan rasa lezat yang hakiki",
+    price: 24400,
+    image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE138CHmDA-PUo3LkX3ugxHSHPrJT-E2ummYNoQ0VuxWlnd7WZAXLZTy8&s=10",
     stock: 5,
   },
 ];

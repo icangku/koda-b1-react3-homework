@@ -17,7 +17,7 @@ function Menu() {
       description: "Ayam Pop dengan rasa lezat yang hakiki",
       price: 10000,
       image:
-        "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLaZ2HaPDY5zEfKkbOdW2s3HB44KifPP8v7apGvgjSu8LCKGxm_J2hpTQ&s=10",
       stock: 5,
     },
     {
@@ -35,7 +35,7 @@ function Menu() {
       description: "Ayam Pop dengan rasa lezat yang hakiki",
       price: 13000,
       image:
-        "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1SCdDIYMJbBUFquqwMnyLx_jzh8_2Sqd6nNy53qwXCeg9aFn7DA6OI1I&s=10",
       stock: 5,
     },
     {
@@ -44,7 +44,7 @@ function Menu() {
       description: "Ayam Pop dengan rasa lezat yang hakiki",
       price: 3000,
       image:
-        "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwYXPJ8BDCIpoOCjVUKba8FGKISlEnp8jOtkLc0fok58CjoyhhrJBKykY&s=10",
       stock: 5,
     },
     {
@@ -53,7 +53,7 @@ function Menu() {
       description: "Ayam Pop dengan rasa lezat yang hakiki",
       price: 7000,
       image:
-        "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3gSix3tvnT4zUnT9X0W8jbj1Nj6OCS4Z99MvLciZ8xKWGE_f7j34jGQo&s=10",
       stock: 5,
     },
     {
@@ -62,7 +62,7 @@ function Menu() {
       description: "Ayam Pop dengan rasa lezat yang hakiki",
       price: 21500,
       image:
-        "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsDwni7EjY708FQ_8re10XKxLqoPsnzuzdXizwuYsyCr_QB4QuogHMRD0&s=10",
       stock: 5,
     },
     {
@@ -71,7 +71,7 @@ function Menu() {
       description: "Ayam Pop dengan rasa lezat yang hakiki",
       price: 25500,
       image:
-        "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS8eFqoO00PE9jhAlA7V-_cQjT_7u_FF0W3AAvk0XI_Dvwn_PUpcdfLx6M&s=10",
       stock: 5,
     },
     {
@@ -80,7 +80,7 @@ function Menu() {
       description: "Ayam Pop dengan rasa lezat yang hakiki",
       price: 15500,
       image:
-        "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTVz_lu77-A8MMKYxOg2xRKwmXMT5AJPpJicR8HdC8Sz1RXg7I9NQHG3_NV&s=10",
       stock: 5,
     },
     {
@@ -89,7 +89,7 @@ function Menu() {
       description: "Ayam Pop dengan rasa lezat yang hakiki",
       price: 30000,
       image:
-        "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIHVatm2fdYw0ciY9Bmrz3woh8HeXshkriRhrErdPyepbNiGYrtI33e-ay&s=10",
       stock: 5,
     },
     {
@@ -98,7 +98,7 @@ function Menu() {
       description: "Ayam Pop dengan rasa lezat yang hakiki",
       price: 24400,
       image:
-        "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE138CHmDA-PUo3LkX3ugxHSHPrJT-E2ummYNoQ0VuxWlnd7WZAXLZTy8&s=10",
       stock: 5,
     },
   ];
@@ -153,7 +153,7 @@ function Menu() {
         {filteredDishes.length === 0 ? (
           <p>No Dishes available.</p>
         ) : (
-          <div className="grid md:grid-cols-3 grid-cols-1 gap-4 ">
+          <div className="grid md:grid-cols-5 grid-cols-1 gap-4 ">
             {filteredDishes.map((item, index) => (
               <ProductCard item={item} key={index} />
             ))}

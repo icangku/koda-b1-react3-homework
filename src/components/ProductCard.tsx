@@ -24,7 +24,7 @@ function ProductCard({ item }: ProductCardProps) {
         <span className="text-lg font-semibold text-white">
           Rp{item.price.toLocaleString("id-ID")},-
         </span>
-        <p className="text-sm mt-1 text-gray-200">{item.description}</p>
+        {/* <p className="text-sm mt-1 text-gray-200">{item.description}</p> */}
       </div>
     </div>
   );
