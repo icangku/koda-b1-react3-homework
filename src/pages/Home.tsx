@@ -1,90 +1,79 @@
 import React from "react";
+import ProductCard from "../components/ProductCard";
+const dishes = [
+  {
+    id: 8,
+    name: "Nasi Telur Minang",
+    description: "Ayam Pop dengan rasa lezat yang hakiki",
+    price: 15500,
+    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    stock: 5,
+  },
+  {
+    id: 9,
+    name: "Dendeng Cabe Ijo/Cabe Merah",
+    description: "Ayam Pop dengan rasa lezat yang hakiki",
+    price: 30000,
+    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    stock: 5,
+  },
+  {
+    id: 10,
+    name: "Jus Timun Nanas",
+    description: "Ayam Pop dengan rasa lezat yang hakiki",
+    price: 24400,
+    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    stock: 5,
+  },
+  {
+    id: 5,
+    name: "Nasi Putih",
+    description: "Ayam Pop dengan rasa lezat yang hakiki",
+    price: 7000,
+    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    stock: 5,
+  },
+  {
+    id: 6,
+    name: "Paket Komplit Ayam Goreng Kecombrang",
+    description: "Ayam Pop dengan rasa lezat yang hakiki",
+    price: 21500,
+    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    stock: 5,
+  },
+  {
+    id: 7,
+    name: "Ayam Kecap",
+    description: "Ayam Pop dengan rasa lezat yang hakiki",
+    price: 25500,
+    image: "https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg",
+    stock: 5,
+  },
+];
 
 function Home() {
   return (
-    <section>
-      <div className="bg-gray-50 py-20 px-4">
-        <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-4xl font-bold text-gray-400 mb-4">
-            Selamat Datang di Taburai
-          </h1>
-          <p className="text-lg text-gray-400 mb-8">
-            Nikmati berbagai pilihan hidangan lezat dari dapur kami. Kami berada
-            di Bogor, Jawa Barat.
-          </p>
+    <section className="mx-auto px-2 py-2">
+      <div className="grid md:grid-cols-2 grid-cols-1 gap-4 min-h-screen">
+        <div className="relative p-6 overflow-hidden flex flex-col justify-center text-white">
+          <div className="max-w-4xl mx-auto text-center">
+            <h1 className="text-4xl font-bold text-gray-800 mb-4">
+              Selamat Datang di Taburai
+            </h1>
+            <p className="text-lg text-gray-400 mb-8">
+              Nikmati berbagai pilihan hidangan lezat dari dapur kami. Kami
+              berada di Bogor, Jawa Barat.
+            </p>
+          </div>
         </div>
-      </div>
-      <h1 className="text-4xl text-center my-4 text-gray-400">
-        Favorite Taburai
-      </h1>
-      <div className="mx-auto px-20 py-20">
-        <div className="grid grid-cols-4 gap-4">
-          <div className="relative border border-orange-700 rounded-md p-6 shadow-xs overflow-hidden h-64 flex flex-col justify-end text-white">
-            <img
-              src="https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg"
-              alt="Rendang"
-              className="absolute inset-0 w-full h-full object-cover z-0"
-            />
-            <div className="absolute inset-0 bg-black/50 z-10" />
-            <div className="absolute bottom-0 left-0 z-20 bg-black/30 backdrop-blur-md p-2 rounded-md border border-white/10">
-              <h4 className="text-2xl font-bold tracking-wide text-orange-400">
-                Rendang
-              </h4>
-              <p className="text-sm mt-1 text-gray-200">
-                Merupakan sebuah makanan khas padang terenak sepanjang masa.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative border border-orange-700 rounded-md p-6 shadow-xs overflow-hidden h-64 flex flex-col justify-end text-white">
-            <img
-              src="https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg"
-              alt="Rendang"
-              className="absolute inset-0 w-full h-full object-cover z-0"
-            />
-            <div className="absolute inset-0 bg-black/50 z-10" />
-            <div className="absolute bottom-0 left-0 z-20 bg-black/30 backdrop-blur-md p-2 rounded-md border border-white/10">
-              <h4 className="text-2xl font-bold tracking-wide text-orange-400">
-                Rendang
-              </h4>
-              <p className="text-sm mt-1 text-gray-200">
-                Merupakan sebuah makanan khas padang terenak sepanjang masa.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative border border-orange-700 rounded-md p-6 shadow-xs overflow-hidden h-64 flex flex-col justify-end text-white">
-            <img
-              src="https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg"
-              alt="Rendang"
-              className="absolute inset-0 w-full h-full object-cover z-0"
-            />
-            <div className="absolute inset-0 bg-black/50 z-10" />
-            <div className="absolute bottom-0 left-0 z-20 bg-black/30 backdrop-blur-md p-2 rounded-md border border-white/10">
-              <h4 className="text-2xl font-bold tracking-wide text-orange-400">
-                Rendang
-              </h4>
-              <p className="text-sm mt-1 text-gray-200">
-                Merupakan sebuah makanan khas padang terenak sepanjang masa.
-              </p>
-            </div>
-          </div>
-
-          <div className="relative border border-orange-700 rounded-md p-6 shadow-xs overflow-hidden h-64 flex flex-col justify-end text-white">
-            <img
-              src="https://www.dapurkobe.co.id/wp-content/uploads/rendang-daging.jpg"
-              alt="Rendang"
-              className="absolute inset-0 w-full h-full object-cover z-0"
-            />
-            <div className="absolute inset-0 bg-black/50 z-10" />
-            <div className="absolute bottom-0 left-0 z-20 bg-black/30 backdrop-blur-md p-2 rounded-md border border-white/10">
-              <h4 className="text-2xl font-bold tracking-wide text-orange-400">
-                Rendang
-              </h4>
-              <p className="text-sm mt-1 text-gray-200">
-                Merupakan sebuah makanan khas padang terenak sepanjang masa.
-              </p>
-            </div>
+        <div className="px-2 py-2 relative p-6 overflow-hidden flex flex-col justify-start text-white">
+          <h1 className="text-xl text-left my-4 text-gray-800">
+            Favorite Taburai
+          </h1>
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
+            {dishes.map((item, index) => (
+              <ProductCard item={item} key={index} />
+            ))}
           </div>
         </div>
       </div>

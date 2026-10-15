@@ -6,7 +6,7 @@ function Navbar() {
     <nav className="bg-gray-800 p-4">
       <div className="max-w-6xl mx-auto flex justify-between items-center">
         <a href="#" className="text-white font-bold text-xl">
-          BrandLogo
+          Taburai
         </a>
 
         <div className="flex space-x-6">
