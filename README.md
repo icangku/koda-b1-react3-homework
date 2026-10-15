@@ -1,75 +1,98 @@
-# React + TypeScript + Vite
+# Homework 2 - Taburai (React JS & Tailwind CSS)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Taburai** adalah aplikasi web kuliner yang menampilkan banyak menu makanan tradisional Indonesia. Juga bisa memberikan pesan di bagian contact.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📸 Tampilan Halaman (Screenshots)
 
-## React Compiler
+> _Catatan: Gantilah URL/path gambar di bawah ini dengan gambar screenshot sesuai hasil tangkapan layar project Anda di lokal._
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 1. Halaman Beranda (Home)
 
-## Expanding the ESLint configuration
+Menampilkan informasi utama usaha, banner hero, serta daftar produk favorit yang disajikan dalam bentuk kartu menu (_cards_).
+![Halaman Home](./public/screenshot/home.jpg)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### 2. Halaman Daftar Menu & Pencarian (Menu)
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Menampilkan katalog makanan lengkap dengan gambar, deskripsi, kategori, serta fitur pencarian menu secara real-time berdasarkan kata kunci nama hidangan.
+![Halaman Menu](./public/screenshot/menu.jpg)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### 3. Halaman Kontak Us (Contact Us)
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+Menampilkan formulir pesan interaktif serta riwayat pesan yang telah dikirim dan tersimpan secara otomatis menggunakan browser `localStorage`.
+![Halaman Contact Us](./public/screenshot/contact.jpg)
 
-```
+---
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+## 🔄 Alur Penggunaan Website
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. **Navigasi Antar Halaman (`React Router`):**
+   - Pengunjung dapat berpindah halaman secara cepat tanpa _reload_ browser melalui menu di bagian atas.
+   - Pilihan navigasi mencakup **Home**, **Menu**, dan **Contact Us**.
+   - Di tampilan perangkat seluler (_mobile view_).
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+2. **Pencarian Menu (`Search Feature`):**
+   - Masuk ke halaman **Menu**.
+   - Ketikkan nama hidangan yang ingin dicari pada kolom pencarian (_search bar_).
+   - Daftar menu akan secara otomatis tersaring secara _real-time_ sesuai dengan teks yang dimasukkan.
+   - Apabila produk tidak ditemukan, aplikasi akan menampilkan pesan pemberitahuan yang informatif.
 
-```
+3. **Pengiriman Pesan (`Form & LocalStorage`):**
+   - Masuk ke halaman **Contact Us**.
+   - Isi formulir yang terdiri dari **Nama**, **Email**, dan **Pesan**.
+   - Klik tombol **Kirim Pesan**.
+   - Pesan yang berhasil dikirim akan langsung tersimpan ke `localStorage` web browser dan ditampilkan pada daftar riwayat pesan di bawah formulir.
+
+---
+
+## 🛠️ Teknologi & Fitur Utama
+
+- **React JS (Vite):** Framework UI berbasis komponen.
+- **React Router DOM v6:** Manajemen rute dan navigasi Single Page Application (SPA).
+- **Tailwind CSS:** Framework CSS _utility-first_ untuk desain yang modern, konsisten, dan responsif.
+- **State & Props Management:** Pengelolaan alur data dan komponen reusable (`ProductCard`).
+- **Web Storage API (`localStorage`):** Penyimpanan data pesan pengguna secara persisten di browser.
+
+---
+
+## 🚀 Cara Menjalankan Project
+
+Ikuti langkah-langkah di bawah ini untuk menjalankan project di lingkungan lokal (_development environment_):
+
+### Prasyarat
+
+Pastikan Anda sudah menginstal [Node.js](https://nodejs.org/) (versi 16 atau yang terbaru) di perangkat Anda.
+
+### Langkah Instalasi & Lisensi
+
+1. **Clone repository ini ke komputer Anda:**
+
+   ```bash
+   git clone https://github.com/icangku/koda-b1-react3-homework.git
+   ```
+
+2. **Masuk ke direktori project:**
+
+   ```bash
+   cd koda-b1-react3-homework
+   ```
+
+3. **Install seluruh dependensi project:**
+
+   ```bash
+   npm install
+   ```
+
+4. **Jalankan server pengembangan (Development Server):**
+
+   ```bash
+   npm run dev
+   ```
+
+5. **Buka di browser:**
+   Buka alamat URL yang tertera pada terminal (biasanya `http://localhost:5173/`).
+
+---
+
+_Dibuat untuk memenuhi Tugas Homework 2 - React & Tailwind CSS._

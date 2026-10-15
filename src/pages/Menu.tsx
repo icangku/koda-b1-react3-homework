@@ -150,11 +150,15 @@ function Menu() {
             </div>
           </div>
         </form>
-        <div className="grid md:grid-cols-3 grid-cols-1 gap-4 ">
-          {filteredDishes.map((item, index) => (
-            <ProductCard item={item} key={index} />
-          ))}
-        </div>
+        {filteredDishes.length === 0 ? (
+          <p>No Dishes available.</p>
+        ) : (
+          <div className="grid md:grid-cols-3 grid-cols-1 gap-4 ">
+            {filteredDishes.map((item, index) => (
+              <ProductCard item={item} key={index} />
+            ))}
+          </div>
+        )}
       </div>
       ;
     </>
