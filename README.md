@@ -4,7 +4,7 @@
 
 ---
 
-## 📸 Tampilan Halaman (Screenshots)
+## Tampilan Halaman (Screenshots)
 
 > _Catatan: Gantilah URL/path gambar di bawah ini dengan gambar screenshot sesuai hasil tangkapan layar project Anda di lokal._
 
@@ -25,7 +25,7 @@ Menampilkan formulir pesan interaktif serta riwayat pesan yang telah dikirim dan
 
 ---
 
-## 🔄 Alur Penggunaan Website
+## Alur Penggunaan Website
 
 1. **Navigasi Antar Halaman (`React Router`):**
    - Pengunjung dapat berpindah halaman secara cepat tanpa _reload_ browser melalui menu di bagian atas.
@@ -46,7 +46,7 @@ Menampilkan formulir pesan interaktif serta riwayat pesan yang telah dikirim dan
 
 ---
 
-## 🛠️ Teknologi & Fitur Utama
+## Teknologi & Fitur Utama
 
 - **React JS (Vite):** Framework UI berbasis komponen.
 - **React Router DOM v6:** Manajemen rute dan navigasi Single Page Application (SPA).
@@ -56,7 +56,7 @@ Menampilkan formulir pesan interaktif serta riwayat pesan yang telah dikirim dan
 
 ---
 
-## 🚀 Cara Menjalankan Project
+## Cara Menjalankan Project
 
 Ikuti langkah-langkah di bawah ini untuk menjalankan project di lingkungan lokal (_development environment_):
 
